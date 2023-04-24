@@ -1,0 +1,14 @@
+export const solidBlack ='#000000'
+export const solidWhite= '#ffffff'
+export const lightWhite= "#D4D4D4"
+export const solidRed= '#ff0000'
+export const borderColor= '#027cc8'
+export const placeHolderColor= '#979797'
+export const neonGreen= '#beff7e'
+export const peacockBlue='#00a8c5'
+export const skyBlue= '#288fcf'
+export const linearBackGroundColor1= '#BEFF7E'
+export const linearBackGroundColor2= '#00A8C5'
+export const linearButtonColor1= '#473B6D'
+export const linearButtonColor2= '#80d4ff'
+export const darkWhite = "#999999"
