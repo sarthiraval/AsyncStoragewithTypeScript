@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native"
 
 const styles = StyleSheet.create({
   mainView: {
-    flexDirection: "row",
+    flexDirection:"row",
     marginHorizontal: scale(20),
     padding: scale(10),
     marginTop:scale(20)

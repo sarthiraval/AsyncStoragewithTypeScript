@@ -7,6 +7,7 @@ import styles from './styles'
 import { LandingMap } from '../../assets/images'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 const SplashScreen = () => {
+    const [timePassed, setTimePassed] = useState(false);
     const navigation : any = useNavigation()
     const getData = async()=>{
         const email = await AsyncStorage.getItem("Email")
@@ -19,9 +20,11 @@ const SplashScreen = () => {
     }
     useEffect(() => {
         setTimeout(() => {
-            getData()
+            setTimePassed(true)
+            // getData()
         }, 5000);
     }, [])
+    if (!timePassed) {
         return (
             <SafeAreaView style={styles.mainView}>
                 <Image source={LandingMap} style={styles.mapImage} />
@@ -29,6 +32,9 @@ const SplashScreen = () => {
                 <Line />
             </SafeAreaView>
         )
+    }
+    navigation.replace('Landing');
+    return
 }
 
 

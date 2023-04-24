@@ -95,7 +95,7 @@ const Register = () => {
         innerStyle={styles.textLogin}
         label={"Login"}
       />
-      <View style={styles.baseView}>
+
         <CustomTextInput
           icon={pizza}
           placeholder={"Enter Emai ID"}
@@ -105,8 +105,7 @@ const Register = () => {
         {badEmail === true && (
           <CustomImage />
         )}
-      </View>
-      <View style={styles.baseView}>
+ 
         <CustomTextInput
           value={password}
           type={"password"}
@@ -121,7 +120,6 @@ const Register = () => {
           // />
           <CustomImage />
         )}
-      </View>
       <CustomButton
         title={"Login"}
         onPress={() => {
